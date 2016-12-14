@@ -4,6 +4,7 @@
     if ($_POST) {
         $reg_errors = array();
         //Pregs
+        //check first name
             if (preg_match('/^[A-Z \'.-]{2,45}$/i', $_POST['firstname'])) {
                 $firstname = trim($_POST['firstname']);
             } else {
@@ -33,13 +34,13 @@
             $reg_errors['password1'] = 'Password must be between 4 and 60 characters long, 
                    and one number.!';
         }
+        // end validation
+        
         if (empty($reg_errors)) {
             //Validation OK: Create User 
             var_dump($_POST);
             //exit();
-            // reading post params
-            if(isset($_POST['submit'])){
-            
+            // reading post params     
             $Address = $_POST['address'];
             $Birthdate = $_POST['birthday'];
             $City = $_POST['city'];
@@ -54,23 +55,36 @@
             $data = $dbh->createUser($Address, $Birthdate,
                     $City, $email, $password, 
                      $first_name, $last_name, $Phone_Num, $Postal_Code, $Province, $User_Name);
-            //var_dump($data);
+            var_dump($data);
             
-            if ($data['error'] == false) {
-                $active = $data['active'];
-                //it worked
-                echo '<div class="alert alert-success"><strong>Account Registered</strong>';
-            }
-        } else {
-             echo '<div class="alert alert-danger">';
+            if ($data['error']==false){
+                    //$message = $data['message'];
+                    $active = $data['active'];
+                    //var_dump($active)  ;                   
+                }else{
+                    echo '<div class="alert alert-danger"><strong>Registration Failed</strong>
+                         <p>The following error has occured: '. $data['message']  .'</p></div>';   
+                }
+                
+                 //finish page:  hide form
+                echo   '</div>
+                    </div>';
+                include './includes/footer.php'; //footer
+                exit();
+                
+            }else{
+                //Validation Errors: Display Errors
+                //var_dump($reg_errors);
+                echo '<div class="alert alert-danger">';
                 echo '<ul>';
                 foreach($reg_errors as $error){
                     echo "<li>$error</li>";
-        }
-        echo '</ul></div>';
-        }
+                }
+                echo '</ul>';
+                echo '</div> ';
+            }
     }
-    }
+    
     ?>
     <div class="col-lg-12 well">
         <div class="row">

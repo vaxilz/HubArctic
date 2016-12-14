@@ -32,6 +32,19 @@
 </head>
 
 <body>
+    <?php
+    //start session
+    session_start();
+    
+   function __autoload($class) {
+            require_once 'Classes/' . $class . '.php';
+        }
+        //calls the dbhandler
+        $dbh = new DbHandler();
+        
+        //print_r($dbh);
+        //DbHandler Object ( [conn:DbHandler:private] => PDO Object ( ) )
+    ?>
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
