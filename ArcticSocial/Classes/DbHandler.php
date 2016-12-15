@@ -32,7 +32,7 @@ class DbHandler {
             $password_hash = PassHash::hash($password);
 
             // Make activation code
-            $active = md5(uniqid(rand(), true));
+            //$active = md5(uniqid(rand(), true));
 
             $stmt = $this->conn->prepare("INSERT INTO users(Address,Birthdate,
                 City,email,pass,
