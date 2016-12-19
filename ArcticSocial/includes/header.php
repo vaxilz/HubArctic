@@ -33,20 +33,16 @@
 
 <body>
     <?php
-    //start session
-    session_start();
-    
-   function __autoload($class) {
-            require_once 'Classes/' . $class . '.php';
-        }
-        //calls the dbhandler
-        $dbh = new DbHandler();
-        
-        //print_r($dbh);
-        //DbHandler Object ( [conn:DbHandler:private] => PDO Object ( ) )
+        session_start();
+        function __autoload($class){
+        require_once  'Classes/' . $class . '.php';
+    }
+    $dbh = new DBhandler();
     ?>
-
     <!-- Navigation -->
+  
+                     
+                 
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -57,7 +53,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">ArcticSocial </a>
+                <a class="navbar-brand" href="index.php">ArcticSocial </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -66,23 +62,39 @@
                         <a href="index.php">Home</a>
                     </li>
                     <li>
-                        <a href="party.html">Party</a>
+                        <a href="party.php">Party</a>
                     </li>   
                     <li>
-                        <a href="about.html">About Us </a>
+                        <a href="about.php">About Us </a>
                     </li>
                     <li>
-                        <a href="contact.html">Contact Us</a>
+                        <a href="contact.php">Contact Us</a>
                     </li>
-                    <li>
-                        <a href="Login.php">Login/Register</a>
-                    </li>
-                 
-                    
-                   
-                </ul>
+                      <li class="dropdown "> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                            <?php
+                            if(empty($_SESSION['id']) ){
+                                //NON-AUTHENTICATED USER 
+                            ?>
+                                <li><a href="/ArcticSocial/register.php">Register <span class='glyphicon glyphicon-user'></span></a></li>
+                                <li><a href="/ArcticSocial/logins.php">Login <span class='glyphicon glyphicon-log-in'></span></a></li>                              
+                          
+                            <?php
+                                } else{                          
+                       
+                                //REGISTERED USER IS LOGGED IN 
+                            ?>
+                                <li><a href="#">My Account <span class='glyphicon glyphicon-user'></span></a></li>
+                                <li><a href="/ArcticSocial/logout.php">Logout <span class='glyphicon glyphicon-log-out'></span></a></li>                              
+                            <?php
+                                }
+                         ?>
+                            </ul>
             </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
+    <?php
+  
+    
