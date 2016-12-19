@@ -84,12 +84,11 @@ class DbHandler {
         return $data;
     }
     
-    public function getUserByEmail($email) {
+     public function getUserByEmail($email) {
         try {
-            $stmt = $this->conn->prepare("SELECT id, type, email, first_name, last_name, 
+            $stmt = $this->conn->prepare("SELECT id, email, first_name, last_name
                                          FROM users WHERE email = :email");
             $stmt->bindValue(':email', $email, PDO::PARAM_STR);
-
             if ($stmt->execute()) {
                 $user = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 //return $user;
@@ -114,7 +113,6 @@ class DbHandler {
             $stmt->bindValue(':email', $email, PDO::PARAM_STR);
             $stmt->execute();
             $row = $stmt->fetch(PDO::FETCH_OBJ);
-
             if (PassHash::check_password($row->pass, $password)) {
                 // User password is correct
                 return TRUE;
@@ -133,7 +131,6 @@ class DbHandler {
         $stmt->bindValue(':email', $email, PDO::PARAM_STR);
         $stmt->execute();
         $num_rows = $stmt->fetchColumn();
-
         return $num_rows > 0;
     }
 
