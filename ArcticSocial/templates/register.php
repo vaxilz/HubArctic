@@ -38,7 +38,7 @@
         
         if (empty($reg_errors)) {
             //Validation OK: Create User 
-            var_dump($_POST);
+           // var_dump($_POST);
             //exit();
             // reading post params     
             $Address = $_POST['address'];
@@ -55,7 +55,7 @@
             $data = $dbh->createUser($Address, $Birthdate,
                     $City, $email, $password, 
                      $first_name, $last_name, $Phone_Num, $Postal_Code, $Province, $User_Name);
-            var_dump($data);
+           // var_dump($data);
             
             if ($data['error']==false){
                     //$message = $data['message'];
