@@ -84,7 +84,6 @@
                        
                                 //REGISTERED USER IS LOGGED IN 
                             ?>
-                                <li><a href="#">My Account <span class='glyphicon glyphicon-user'></span></a></li>
                                 <li><a href="/ArcticSocial/logout.php">Logout <span class='glyphicon glyphicon-log-out'></span></a></li>                              
                             <?php
                                 }
