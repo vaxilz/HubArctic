@@ -10,21 +10,21 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
             <div class="item active">
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');"></div>
+                <div class="fill" style="background-image:url('images/party1.jpg');"></div>
                 <div class="carousel-caption">
-                    <h2>Caption 1</h2>
+                    
                 </div>
             </div>
             <div class="item">
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
+                <div class="fill" style="background-image:url('images/party2.jpg');"></div>
                 <div class="carousel-caption">
-                    <h2>Caption 2</h2>
+                    
                 </div>
             </div>
             <div class="item">
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+                <div class="fill" style="background-image:url('images/party3.jpg');"></div>
                 <div class="carousel-caption">
-                    <h2>Caption 3</h2>
+                    
                 </div>
             </div>
         </div>
@@ -51,11 +51,13 @@
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h4> 25% off on your first Hosting !</h4>
+                      
+                        <h4><em class="fa fa-balance-scale"></em>Major Savings !</h4>
                     </div>
                     <div class="panel-body">
-                        <p>Press the learn button to learn more about how you can earn up to 25% off your first hosting! </p>
-                        <a href="party.html" class="btn btn-default">Learn More</a>
+                       
+                      <p>Press the learn more button to find out how you can earn up to 25% off your first hosting! </p>
+                        <a href="party.php" class="btn btn-default">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -66,18 +68,18 @@
                     </div>
                     <div class="panel-body">
                         <p>Press the learn button to learn more about how you can achieve slammin' deals with our CyberMonday week special !</p>
-                        <a href="#" class="btn btn-default">Learn More</a>
+                        <a href="party.php" class="btn btn-default">Learn More</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                      <h4><em class="fa fa-birthday-cake"></em> Birthday's</h4>
+                      <h4><em class="fa fa-birthday-cake"></em> Birthday Specials</h4>
                     </div>
                     <div class="panel-body">
-                        <p>Random Special offer....</p>
-                        <a href="#" class="btn btn-default">Learn More</a>
+                        <p>Is it your Birthday !? <br> Great ! Click the Learn more button how we can help you have the greatest party for your birthday !</p>
+                        <a href="party.php" class="btn btn-default">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -89,23 +91,33 @@
         <!-- Features Section -->
         <div class="row">
             <div class="col-lg-12">
-                <h2 class="page-header">Modern Business Features</h2>
+                <h2 class="page-header">Our Latest Party!</h2>
             </div>
             <div class="col-md-6">
-                <p>The Modern Business template by Start Bootstrap includes:</p>
+                <p>Hosted in Moncton, New-Brunswick</p>
+                <p><b>Host:</b> Brad</p>
+                <p>Party Included:</p>
                 <ul>
-                    <li><strong>Bootstrap v3.3.7</strong>
-                    </li>
-                    <li>jQuery v1.11.1</li>
-                    <li>Font Awesome v4.2.0</li>
-                    <li>Working PHP contact form with validation</li>
-                    <li>Unstyled page elements for easy customization</li>
-                    <li>17 HTML pages</li>
+                    <li>Music</li>
+                    <li>On stage Dj's</li>
+                    <li>Open Bar</li>
+                    <li>AND MORE !</li>
                 </ul>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
+                  <h4>Raiting:<b>10/10 !</b></h4>
+                   <div class="Dubai">
+                      
+                        <h4>Comments:</h4>
+                    
+                  
+                  <p><b>John Doe:</b> "ArcticSocial is the best, I will most definitely recommend them to my co-workers"</p>
+                  
+                  <p><b>Nancy Drewsky:</b> "What an amazing night !!! Great job, very professional !!!"</p>
+                  
+                  <p><b>Mike Roch:</b> "I will Tell allllllll my friends about ArcticSocial!"</p>
+                  </div>
             </div>
             <div class="col-md-6">
-                <img class="img-responsive" src="http://placehold.it/700x450" alt="">
+                
             </div>
         </div>
         <!-- /.row -->
@@ -113,13 +125,10 @@
         <hr>
 
         <!-- Call to Action Section -->
-        <div class="well">
+        
             <div class="row">
-                <div class="col-md-8">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+                
+                <div class="col-md-4 col-lg-12">
+                    <a class="btn btn-lg btn-default btn-block" href="index.php"><em class="fa fa-arrow-up"></em> Back to top <em class="fa fa-arrow-up"></em></a>
                 </div>
-                <div class="col-md-4">
-                    <a class="btn btn-lg btn-default btn-block" href="#">Call to Action</a>
-                </div>
-            </div>
-        </div>
+      </div>
