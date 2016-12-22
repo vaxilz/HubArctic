@@ -45,45 +45,23 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">
-                    This Week's Special Offers !
+                   Our new sponsor !
                 </h1>
             </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
+            <div class="col-md-12">
+               
                     <div class="panel-heading">
                       
-                        <h4><em class="fa fa-balance-scale"></em>Major Savings !</h4>
+                        <h4><em class="fa fa-balance-scale"></em></h4>
                     </div>
                     <div class="panel-body">
-                       
-                      <p>Press the learn more button to find out how you can earn up to 25% off your first hosting! </p>
-                        <a href="party.php" class="btn btn-default">Learn More</a>
+                        <h2 class="spon">ArcticSocial is proud to present our new sponsor</h2>
+                            <p class="Vax">VaxThinking - Bringing the fun to work!</p>
+                           
                     </div>
-                </div>
+         
             </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <h4><em class="fa fa-fw fa-gift"></em>CyberMonday Week Specials</h4>
-                    </div>
-                    <div class="panel-body">
-                        <p>Press the learn button to learn more about how you can achieve slammin' deals with our CyberMonday week special !</p>
-                        <a href="party.php" class="btn btn-default">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <h4><em class="fa fa-birthday-cake"></em> Birthday Specials</h4>
-                    </div>
-                    <div class="panel-body">
-                        <p>Is it your Birthday !? <br> Great ! Click the Learn more button how we can help you have the greatest party for your birthday !</p>
-                        <a href="party.php" class="btn btn-default">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+            
         <!-- /.row -->
 
         
@@ -91,44 +69,27 @@
         <!-- Features Section -->
         <div class="row">
             <div class="col-lg-12">
-                <h2 class="page-header">Our Latest Party!</h2>
-            </div>
-            <div class="col-md-6">
-                <p>Hosted in Moncton, New-Brunswick</p>
-                <p><b>Host:</b> Brad</p>
-                <p>Party Included:</p>
-                <ul>
-                    <li>Music</li>
-                    <li>On stage Dj's</li>
-                    <li>Open Bar</li>
-                    <li>AND MORE !</li>
-                </ul>
-                  <h4>Raiting:<b>10/10 !</b></h4>
-                   <div class="Dubai">
-                      
-                        <h4>Comments:</h4>
-                    
-                  
-                  <p><b>John Doe:</b> "ArcticSocial is the best, I will most definitely recommend them to my co-workers"</p>
-                  
-                  <p><b>Nancy Drewsky:</b> "What an amazing night !!! Great job, very professional !!!"</p>
-                  
-                  <p><b>Mike Roch:</b> "I will Tell allllllll my friends about ArcticSocial!"</p>
-                  </div>
+                <h2 class="page-header"></h2>
             </div>
             <div class="col-md-6">
                 
+              
+                      
+                       
+            <div class="col-md-6">
+                
+            </div>
+        
+        <!-- /.row -->
             </div>
         </div>
-        <!-- /.row -->
-
         <hr>
 
         <!-- Call to Action Section -->
         
             <div class="row">
                 
-                <div class="col-md-4 col-lg-12">
+                <div class="col-lg-12">
                     <a class="btn btn-lg btn-default btn-block" href="index.php"><em class="fa fa-arrow-up"></em> Back to top <em class="fa fa-arrow-up"></em></a>
                 </div>
       </div>
